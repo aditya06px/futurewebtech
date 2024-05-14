@@ -1,0 +1,88 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #333;
+  }
+  
+  .navbar-logo img {
+    width: 50px; 
+  }
+  
+  .navbar-links ul{
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .navbar-links li {
+    margin-right: 1rem;
+  }
+  
+  .navbar-links li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .navbar-links li a:hover, .navbar-links li a.active {
+    color: aqua;
+    text-decoration: underline 3px;
+    text-underline-offset: 4px;
+    text-decoration-color: white;
+}
+
+.navbar-toggle {
+    display: block; 
+    cursor: pointer;
+  }
+  
+  .menu-toggle {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+
+  .navbar-links.active {
+    display: block;
+  }
+  
+  .hamburger {
+    font-size: 30px;
+    display: none;
+  }
+  
+  @media (max-width: 768px) {  /* can do 1024*/
+
+    .hamburger {
+        font-size: 30px;
+        display: flex;
+      }
+
+    .navbar-links {
+      display: none;
+    }
+  
+    .navbar-div {
+        display: flex;
+        padding: 4px 0;
+    }
+
+    .navbar-toggle {
+     position: absolute;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 400px;
+     transition: all 0.3s ease-in;  /* not working*/
+     top: 52px;    /* length of nav bar measured is 52px */
+     left: 0;
+     width: 100%;
+     gap: 24px;
+     background-color: #333;
+    }
+
+  }
+  
