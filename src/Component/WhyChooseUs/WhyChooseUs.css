@@ -1,0 +1,67 @@
+.dark-red-color {
+    color: var(--dark-red-color);
+}
+
+.why-choose-us {
+    width: 80%;
+    margin: 20px auto 0 auto;
+}
+
+.why-choose-us h2 {
+    text-align: center;
+}
+
+.why-choose-us-card {
+    padding: 20px 0 0 20px;
+    margin-top: 16px;
+    border-radius: 20px;
+    background-color: var(--card-bg-color);
+}
+
+.why-choose-us-card h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+}
+
+.why-choose-us-card p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin-top: 24px;
+}
+
+@media (min-width:768px) {
+
+    .why-choose-us {
+        width: 80%;
+        max-width: 1056px;
+        margin-top: 60px;
+    }
+
+    .why-choose-us-container {
+        display: flex;
+        gap: 3%;
+    }
+
+    .why-choose-us-card {
+        flex: 1;
+    }
+
+    .why-choose-us-card h3 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .why-choose-us-card p {
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: left;
+        margin-bottom: 19px;
+    }
+}
