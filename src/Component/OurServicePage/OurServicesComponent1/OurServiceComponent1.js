@@ -36,11 +36,6 @@ function OurServiceComponent1() {
                     <button className='service-btn'>Visual Design</button>
                     
                 </div>
-
-
-                <div className='align-to-center'>
-                <button className='main-button'>Learn More</button>
-                </div>
             </div>
         </div>
     )

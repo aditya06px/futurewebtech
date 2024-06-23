@@ -35,10 +35,6 @@ function OurServiceComponent4() {
                     
                 </div>
 
-
-                <div className='align-to-center'>
-                <button className='main-button'>Learn More</button>
-                </div>
             </div>
         </div>
     )

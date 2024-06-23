@@ -7,6 +7,7 @@ import ContactUs from './Component/ContactUs/ContactUs';
 import HomePage from './Component/HomePage/HomePage';
 import Nav from './Component/Nav/Nav';
 import OurServicePage from './Component/OurServicePage/OurServicePage';
+import AboutUsPage from './Component/AboutUsPage/AboutUsPage'
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Footer from './Component/Footer/Footer';
 
@@ -40,7 +41,7 @@ const Index = () => {
         },
         {
           path: "/about",
-          element: <ContactUs />,  //change after creting this
+          element: <AboutUsPage />,  
         },
         {
           path: "/contact",

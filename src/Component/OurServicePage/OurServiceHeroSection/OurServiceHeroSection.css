@@ -8,7 +8,7 @@
 }
 
 .our-service-hero-section-breadcrumb {
-    margin-top: 12px;
+    padding-top: 12px;
     margin-bottom: 10px;
     font-size: 14px;
     color: #666;
@@ -87,7 +87,14 @@
 @media (min-width: 768px) {
 
 
+    .our-service-hero-section {
+        margin-top: 0;
 
+    }
+
+    .our-service-hero-section-breadcrumb {
+        padding-top:24px;
+    }
     .our-service-hero-section-title {
         font-size: 36px;
         font-size: 48px;
@@ -96,10 +103,13 @@
         text-align: center;
     }
 
+    .our-service-hero-section-scrolling-links{
+            margin-top: 112px;
+    }
 
     .our-service-hero-section-links a {
         display: inline-block;
-        margin-right: 20px;
+        margin-right: 100px;
         text-decoration: dotted;
         font-size: 28px;
         font-weight: 600;
@@ -107,5 +117,11 @@
         text-align: left;
         
     }
+
+    
+
+    
+
+   
 
 }
