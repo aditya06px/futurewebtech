@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import '../OurServicesComponent1/OurServiceComponent1.css'
 import  WebDevImg  from '../../../assests/our-services/web-development.jpg'
 
 
 function OurServiceComponent3() {
+    const webDevRef = useRef(null);
     return (
         <div className='OurServiceComponent1-container'>
 
@@ -11,7 +12,7 @@ function OurServiceComponent3() {
                  <img src={WebDevImg} />
             </div>
 
-            <div className='OurServiceComponent1-text'>
+            <div className='OurServiceComponent1-text' id="web-development" ref={webDevRef}>
                 <h3>Web Developement</h3>
                 <p>Our Web Development services focus on creating responsive, secure, and scalable websites that provide exceptional user experiences. We leverage the latest technologies and best practices to ensure your digital presence is powerful and effective.</p>
                

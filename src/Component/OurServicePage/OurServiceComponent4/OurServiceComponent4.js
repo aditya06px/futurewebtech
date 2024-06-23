@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import '../OurServicesComponent1/OurServiceComponent1.css'
 import MobileAppImg from '../../../assests/our-services/mobile-development.jpg'
 
 
 function OurServiceComponent4() {
+    
+    const mobileAppDevRef = useRef(null);
     return (
         <div className='OurServiceComponent1-container reverse-container'>
 
@@ -11,7 +13,7 @@ function OurServiceComponent4() {
                  <img src={MobileAppImg} />
             </div>
 
-            <div className='OurServiceComponent1-text reverse-container-text'>
+            <div className='OurServiceComponent1-text reverse-container-text' id="mobile-app-development" ref={mobileAppDevRef}>
                 <h3>Mobile App Developement</h3>
                 <p>Our Mobile App Development services are dedicated to turning your innovative ideas into high-performance mobile applications. We focus on creating user-friendly and engaging apps that provide seamless experiences on both iOS and Android platforms.</p>
                

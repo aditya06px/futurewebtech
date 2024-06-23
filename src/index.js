@@ -35,15 +35,15 @@ const Index = () => {
           element: <HomePage />,
         },
         {
-          path: "/our-service",
+          path: "/service",
           element: <OurServicePage />  
         },
         {
-          path: "/about-us",
+          path: "/about",
           element: <ContactUs />,  //change after creting this
         },
         {
-          path: "/contact-us",
+          path: "/contact",
           element: <ContactUs />,
         },
       ],

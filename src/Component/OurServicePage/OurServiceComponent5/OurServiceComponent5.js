@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import '../OurServicesComponent1/OurServiceComponent1.css'
 import DigitalMarketingImg from '../../../assests/our-services/mobile-development.jpg'
 
 
 function OurServiceComponent5() {
+    const digitalMarketingRef = useRef(null);
     return (
         <div className='OurServiceComponent1-container'>
 
@@ -11,7 +12,7 @@ function OurServiceComponent5() {
                  <img src={DigitalMarketingImg}/>
             </div>
 
-            <div className='OurServiceComponent1-text'>
+            <div className='OurServiceComponent1-text' id="digital-marketing" ref={digitalMarketingRef}>
                 <h3>Digital Marketing</h3>
                 <p>Our Digital Marketing services are designed to enhance your online presence and drive business growth. By leveraging data-driven strategies and innovative techniques, we ensure your brand reaches and engages the right audience effectively.</p>
                
