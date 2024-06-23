@@ -1,31 +1,18 @@
-import React, { useState, useEffect } from 'react'
+import React, { useRef } from 'react';
 import '../OurServicesComponent1/OurServiceComponent1.css'
-import { ReactComponent as WebDevMobileComponent } from '../../../assests/our-services/mobile-screen/web-development.svg'
-import { ReactComponent as WebDevPcComponent } from '../../../assests/our-services/laptop-screen/web-development.svg'
-
+import  WebDevImg  from '../../../assests/our-services/web-development.jpg'
 
 
 function OurServiceComponent3() {
-
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
-  const updateMedia = () => {
-    setIsMobile(window.innerWidth < 768);
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', updateMedia);
-    return () => window.removeEventListener('resize', updateMedia);
-  });
-
+    const webDevRef = useRef(null);
     return (
         <div className='OurServiceComponent1-container'>
 
             <div className='OurServiceComponent1-img'>
-                 {isMobile ? <WebDevMobileComponent /> : <WebDevPcComponent />}
+                 <img src={WebDevImg} />
             </div>
 
-            <div className='OurServiceComponent1-text'>
+            <div className='OurServiceComponent1-text' id="web-development" ref={webDevRef}>
                 <h3>Web Developement</h3>
                 <p>Our Web Development services focus on creating responsive, secure, and scalable websites that provide exceptional user experiences. We leverage the latest technologies and best practices to ensure your digital presence is powerful and effective.</p>
                
@@ -48,10 +35,6 @@ function OurServiceComponent3() {
                     
                 </div>
 
-
-                <div className='align-to-center'>
-                <button className='main-button'>Learn More</button>
-                </div>
             </div>
         </div>
     )

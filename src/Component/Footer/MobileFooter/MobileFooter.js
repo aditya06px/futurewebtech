@@ -1,10 +1,10 @@
 import React from 'react'
 import './MobileFooter.css'
+import { Link } from 'react-router-dom';
 import { ReactComponent as FacebookLogo } from '../../../assests/footer-icons/facebook.svg'
 import { ReactComponent as  InstagramLogo} from '../../../assests/footer-icons/instagram.svg'
 import { ReactComponent as LinkdinLogo } from '../../../assests/footer-icons/linkdin.svg'
 import { ReactComponent as TwitterLogo } from '../../../assests/footer-icons/twitter.svg'
-
 
 
 function MobileFooter() {
@@ -24,9 +24,15 @@ function MobileFooter() {
     </div>
     <div className="mobilefooter-sitemap">
       <h3>Sitemap</h3>
-      <ul>
-        <li>About Us</li>
-        <li>Contact Us</li>
+      <ul className='mobilefooter-page-links'>
+        <li> 
+        <Link to='/about'>About us</Link>
+        </li>
+
+        <li> 
+        <Link to='/contact'>Contact us</Link>
+        </li>
+
       </ul>
     </div>
 
@@ -37,7 +43,7 @@ function MobileFooter() {
         <TwitterLogo />
     </div>
 
-    <p className='mobilefooter-copyright'>Copyright © 2022. All Rights Reserved | Future Web Technologies</p>
+    <p className='mobilefooter-copyright'>Copyright © 2024. All Rights Reserved | Future Web Technologies</p>
   </div>
   )
 }

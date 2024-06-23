@@ -1,9 +1,19 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './ContactUs.css'; 
+import contactus from '../../assests/contact.jpg'
 
 const ContactUs = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+
   return (
     <div className="contact-us">
+      <div>
+        <img src={contactus}/>
+      </div>
       <h1 className="contact-us-heading">One Agency For Your All Digital Needs</h1>
       <div className="contact-us-info">
         <div className="contact-us-address">
@@ -19,7 +29,7 @@ const ContactUs = () => {
           <p>contact@futurewebtechnologies.co.in</p>
         </div>
       </div>
-      <form className="contact-us-form">
+      <form className="contact-us-form" id='contact-us'>
         <div className="contact-us-form-group">
           <label htmlFor="full-name">Full Name:</label>
           <input type="text" id="full-name" name="fullName" required />

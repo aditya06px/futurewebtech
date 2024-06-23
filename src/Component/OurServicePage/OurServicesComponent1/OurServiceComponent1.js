@@ -1,30 +1,19 @@
-import React, { useState, useEffect } from 'react'
+import React, { useRef } from 'react';
 import './OurServiceComponent1.css'
-import { ReactComponent as UiUxDesignMobileComponent } from '../../../assests/our-services/mobile-screen/ui-ux-design.svg'
-import { ReactComponent as UiUxDesignPcComponent } from '../../../assests/our-services/laptop-screen/ui-ux-design.svg'
+import  UiuxDesignImg  from '../../../assests/our-services/ui-ux-design.jpg'
 
 
 function OurServiceComponent1() {
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
-  const updateMedia = () => {
-    setIsMobile(window.innerWidth < 768);
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', updateMedia);
-    return () => window.removeEventListener('resize', updateMedia);
-  });
-
+    const uiUxRef = useRef(null);
     return (
-        <div className='OurServiceComponent1-container'>
+        <div className='OurServiceComponent1-container' >
 
             <div className='OurServiceComponent1-img'>
-                 {isMobile ? <UiUxDesignMobileComponent /> : <UiUxDesignPcComponent />}
+                 <img src={UiuxDesignImg}/>
             </div>
 
-            <div className='OurServiceComponent1-text'>
+            <div className='OurServiceComponent1-text' id="ui-ux" ref={uiUxRef}>
                 <h3>UI/UX Design</h3>
                 <p>Our UI/UX Design services are dedicated to crafting digital
                     products that are both visually stunning and easy to use. By combining creative design with user-centered principles, we ensure that your digital presence not only looks great but also provides an exceptional user experience. </p>
@@ -46,11 +35,6 @@ function OurServiceComponent1() {
                     <button className='service-btn'>Prototyping</button>
                     <button className='service-btn'>Visual Design</button>
                     
-                </div>
-
-
-                <div className='align-to-center'>
-                <button className='main-button'>Learn More</button>
                 </div>
             </div>
         </div>

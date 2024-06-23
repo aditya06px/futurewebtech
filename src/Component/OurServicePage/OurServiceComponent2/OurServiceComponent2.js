@@ -1,31 +1,20 @@
-import React, { useState, useEffect } from 'react'
+import React, { useRef } from 'react';
 import '../OurServicesComponent1/OurServiceComponent1.css'
-import { ReactComponent as GraphicDesignMobileComponent } from '../../../assests/our-services/mobile-screen/graphic-design.svg'
-import { ReactComponent as GraphicDesignPcComponent } from '../../../assests/our-services/laptop-screen/graphic-design.svg'
-
+import GraphicDesign from '../../../assests/our-services/graphic-design.png'
 
 
 function OurServiceComponent2() {
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
-  const updateMedia = () => {
-    setIsMobile(window.innerWidth < 768);
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', updateMedia);
-    return () => window.removeEventListener('resize', updateMedia);
-  });
-
+    const graphicDesignRef = useRef(null);
+    
     return (
         <div className='OurServiceComponent1-container reverse-container'>
 
             <div className='OurServiceComponent1-img'>
-                 {isMobile ? <GraphicDesignMobileComponent /> : <GraphicDesignPcComponent />}
+                 <img src={GraphicDesign} />
             </div>
 
-            <div className='OurServiceComponent1-text reverse-container-text'>
+            <div className='OurServiceComponent1-text reverse-container-text' id="graphic-design" ref={graphicDesignRef}>
                 <h3>Graphic Design</h3>
                 <p>Our Graphic Design services are all about bringing your brand’s story to life through visually compelling and effective designs. We combine creativity with strategic thinking to deliver designs that not only look great but also communicate your message clearly and resonate with your target audience. </p>
                
@@ -46,11 +35,6 @@ function OurServiceComponent2() {
                     <button className='service-btn'>Print Design</button>
                     <button className='service-btn'>Digital Design</button>
                     
-                </div>
-
-
-                <div className='align-to-center'>
-                <button className='main-button'>Learn More</button>
                 </div>
             </div>
         </div>

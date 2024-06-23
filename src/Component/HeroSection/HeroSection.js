@@ -1,6 +1,5 @@
 import React from 'react'
 import './HeroSection.css'
-import HeroImage from '../../assests/LaptopScreens/OfficeImage.jpg'
 
 function HeroSection() {
   return (

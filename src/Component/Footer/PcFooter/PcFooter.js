@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './PcFooter.css'
 import { ReactComponent as FacebookLogo } from '../../../assests/footer-icons/facebook.svg'
 import { ReactComponent as  InstagramLogo} from '../../../assests/footer-icons/instagram.svg'
@@ -53,9 +54,15 @@ function PcFooter() {
       <div>
 
       <ul className='pcfooter-page-links'>
-            <li>About us</li>
-            <li>Contact us</li>
-          </ul>
+        <li> 
+        <Link to='/about'>About us</Link>
+        </li>
+      <li>
+        <Link to='/contact'>Contact us</Link>
+      </li>
+
+      </ul>
+      
       </div>
 
       <div className='pcfooter-logos'> 

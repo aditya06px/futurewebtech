@@ -35,6 +35,13 @@ img, picture, video, canvas, svg {
 input, button, textarea, select {
   font: inherit;
 }
+
+a {
+  text-decoration: none; 
+  color: inherit; 
+  background-color: transparent; 
+  outline: none; 
+}
 /*
   7. Avoid text overflows
 */

@@ -1,15 +1,66 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import './App.css'
 import reportWebVitals from './reportWebVitals';
+import ContactUs from './Component/ContactUs/ContactUs';
+import HomePage from './Component/HomePage/HomePage';
+import Nav from './Component/Nav/Nav';
+import OurServicePage from './Component/OurServicePage/OurServicePage';
+import AboutUsPage from './Component/AboutUsPage/AboutUsPage'
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import Footer from './Component/Footer/Footer';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// import appRouter from './Component/appRouter'
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const Index = () => {
+    return (
+      <React.Fragment>
+        <Nav />
+        <Outlet />
+        <Footer />
+      </React.Fragment>
+    );
+  };
+
+  const appRouter = createBrowserRouter([
+    {
+      path: "/", 
+      element: <Index />, 
+    //   errorElement: <Error />, 
+      children: [
+        {
+          path: "/",
+          element: <HomePage />,
+        },
+        {
+          path: "/service",
+          element: <OurServicePage />  
+        },
+        {
+          path: "/about",
+          element: <AboutUsPage />,  
+        },
+        {
+          path: "/contact",
+          element: <ContactUs />,
+        },
+      ],
+    },
+  ]);
+
+  
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<RouterProvider router={appRouter} />); 
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
