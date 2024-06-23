@@ -1,28 +1,14 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import '../OurServicesComponent1/OurServiceComponent1.css'
-import { ReactComponent as WebDevMobileComponent } from '../../../assests/our-services/mobile-screen/web-development.svg'
-import { ReactComponent as WebDevPcComponent } from '../../../assests/our-services/laptop-screen/web-development.svg'
-
+import  WebDevImg  from '../../../assests/our-services/web-development.jpg'
 
 
 function OurServiceComponent3() {
-
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
-  const updateMedia = () => {
-    setIsMobile(window.innerWidth < 768);
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', updateMedia);
-    return () => window.removeEventListener('resize', updateMedia);
-  });
-
     return (
         <div className='OurServiceComponent1-container'>
 
             <div className='OurServiceComponent1-img'>
-                 {isMobile ? <WebDevMobileComponent /> : <WebDevPcComponent />}
+                 <img src={WebDevImg} />
             </div>
 
             <div className='OurServiceComponent1-text'>

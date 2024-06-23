@@ -10,8 +10,6 @@ function Nav() {
         setIsMenuOpen(!isMenuOpen);
     };
 
-
-
     const [activePage, setActivePage] = useState('Home');
 
     const handleItemClick = (page) => {

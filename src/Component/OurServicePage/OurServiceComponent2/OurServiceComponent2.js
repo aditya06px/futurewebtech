@@ -1,28 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import '../OurServicesComponent1/OurServiceComponent1.css'
-import { ReactComponent as GraphicDesignMobileComponent } from '../../../assests/our-services/mobile-screen/graphic-design.svg'
-import { ReactComponent as GraphicDesignPcComponent } from '../../../assests/our-services/laptop-screen/graphic-design.svg'
-
+import GraphicDesign from '../../../assests/our-services/graphic-design.png'
 
 
 function OurServiceComponent2() {
-
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
-  const updateMedia = () => {
-    setIsMobile(window.innerWidth < 768);
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', updateMedia);
-    return () => window.removeEventListener('resize', updateMedia);
-  });
 
     return (
         <div className='OurServiceComponent1-container reverse-container'>
 
             <div className='OurServiceComponent1-img'>
-                 {isMobile ? <GraphicDesignMobileComponent /> : <GraphicDesignPcComponent />}
+                 <img src={GraphicDesign} />
             </div>
 
             <div className='OurServiceComponent1-text reverse-container-text'>

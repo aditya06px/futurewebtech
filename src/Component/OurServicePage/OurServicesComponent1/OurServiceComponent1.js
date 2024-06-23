@@ -1,27 +1,14 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import './OurServiceComponent1.css'
-import { ReactComponent as UiUxDesignMobileComponent } from '../../../assests/our-services/mobile-screen/ui-ux-design.svg'
-import { ReactComponent as UiUxDesignPcComponent } from '../../../assests/our-services/laptop-screen/ui-ux-design.svg'
+import  UiuxDesignImg  from '../../../assests/our-services/ui-ux-design.jpg'
 
 
 function OurServiceComponent1() {
-
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
-  const updateMedia = () => {
-    setIsMobile(window.innerWidth < 768);
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', updateMedia);
-    return () => window.removeEventListener('resize', updateMedia);
-  });
-
     return (
         <div className='OurServiceComponent1-container'>
 
             <div className='OurServiceComponent1-img'>
-                 {isMobile ? <UiUxDesignMobileComponent /> : <UiUxDesignPcComponent />}
+                 <img src={UiuxDesignImg}/>
             </div>
 
             <div className='OurServiceComponent1-text'>

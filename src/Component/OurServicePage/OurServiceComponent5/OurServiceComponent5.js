@@ -1,28 +1,14 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import '../OurServicesComponent1/OurServiceComponent1.css'
-import { ReactComponent as DigitalMarketingMobileComponent } from '../../../assests/our-services/mobile-screen/digital-marketing.svg'
-import { ReactComponent as DigitalMarketingPcComponent } from '../../../assests/our-services/laptop-screen/digital-marketing.svg'
-
+import DigitalMarketingImg from '../../../assests/our-services/mobile-development.jpg'
 
 
 function OurServiceComponent5() {
-
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
-  const updateMedia = () => {
-    setIsMobile(window.innerWidth < 768);
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', updateMedia);
-    return () => window.removeEventListener('resize', updateMedia);
-  });
-
     return (
         <div className='OurServiceComponent1-container'>
 
             <div className='OurServiceComponent1-img'>
-                 {isMobile ? <DigitalMarketingMobileComponent /> : <DigitalMarketingPcComponent />}
+                 <img src={DigitalMarketingImg}/>
             </div>
 
             <div className='OurServiceComponent1-text'>

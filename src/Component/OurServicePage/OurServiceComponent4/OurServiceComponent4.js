@@ -1,28 +1,14 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import '../OurServicesComponent1/OurServiceComponent1.css'
-import { ReactComponent as MobileAppMobileComponent } from '../../../assests/our-services/mobile-screen/mobile-app-development.svg'
-import { ReactComponent as MobileAppPcComponent } from '../../../assests/our-services/laptop-screen/mobile-app-development.svg'
-
+import MobileAppImg from '../../../assests/our-services/mobile-development.jpg'
 
 
 function OurServiceComponent4() {
-
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
-  const updateMedia = () => {
-    setIsMobile(window.innerWidth < 768);
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', updateMedia);
-    return () => window.removeEventListener('resize', updateMedia);
-  });
-
     return (
         <div className='OurServiceComponent1-container reverse-container'>
 
             <div className='OurServiceComponent1-img'>
-                 {isMobile ? <MobileAppMobileComponent /> : <MobileAppPcComponent />}
+                 <img src={MobileAppImg} />
             </div>
 
             <div className='OurServiceComponent1-text reverse-container-text'>
