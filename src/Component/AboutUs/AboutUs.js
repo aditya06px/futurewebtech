@@ -5,7 +5,7 @@ function AboutUs() {
   return (
     <section className='about-us'>
       <h2>About Us</h2>
-      <p>At <span className='light-blue-color'>THINK TURTLE TECHNOLOGIES</span>, we're more than just a digital agency - we're your partners in success. With a passion for innovation and a commitment to excellence, we specialize in crafting tailored digital solutions that drive results and elevate brands to new heights.</p>  
+      <p>At <span className='light-blue-color'> Future Web Technologies </span>, we go beyond the ordinary. We are visionaries, innovators, and digital craftsmen dedicated to transforming your online presence. Our mission is to fuse creativity with technology, delivering outstanding digital solutions that not only meet your needs but exceed your expectations. Partner with us and embark on a journey of digital excellence where your success is our ultimate goal. </p>  
     </section>
   )
 }
