@@ -4,10 +4,10 @@ import './AboutUsPage.css';
 import aboutus from '../../assests/about.jpg'
 
 const AboutUsPage = () => {
-    
+
     useEffect(() => {
         window.scrollTo(0, 0)
-      }, [])
+    }, [])
 
     return (
         <div className="about-us">
@@ -16,7 +16,8 @@ const AboutUsPage = () => {
             </div>
             <header>
                 <h1>Future Web Technologies</h1>
-                <p>We are a team of energetic, young professionals passionate about delivering exceptional software services. Our mission is to help your business thrive in the digital age through cutting-edge technology and bespoke solutions. We specialize in providing comprehensive software services tailored to meet the unique needs of our clients.</p>
+                <p>At Future Web Technologies
+                    We are a team of energetic, young professionals passionate about delivering exceptional software services. Our mission is to help your business thrive in the digital age through cutting-edge technology and bespoke solutions. We specialize in providing comprehensive software services tailored to meet the unique needs of our clients.</p>
             </header>
 
             <section className="why-choose-us">
