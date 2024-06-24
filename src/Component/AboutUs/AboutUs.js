@@ -5,11 +5,10 @@ function AboutUs() {
   return (
     <section className='about-us'>
       <h2>About Us</h2>
-<<<<<<< HEAD
+
+      
       <p>At <span className='light-blue-color'> Future Web Technologies </span>, we go beyond the ordinary. We are visionaries, innovators, and digital craftsmen dedicated to transforming your online presence. Our mission is to fuse creativity with technology, delivering outstanding digital solutions that not only meet your needs but exceed your expectations. Partner with us and embark on a journey of digital excellence where your success is our ultimate goal. </p>  
-=======
-      <p>At <span className='light-blue-color'>Future Web Technologies</span> we go beyond the ordinary. We are visionaries, innovators, and digital craftsmen dedicated to transforming your online presence. Our mission is to fuse creativity with technology, delivering outstanding digital solutions that not only meet your needs but exceed your expectations. Partner with us and embark on a journey of digital excellence where your success is our ultimate goal.</p>  
->>>>>>> 9da2468 (home page text changes)
+
     </section>
   )
 }
