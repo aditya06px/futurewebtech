@@ -6,7 +6,7 @@ import { ReactComponent as  InstagramLogo} from '../../../assests/footer-icons/i
 import { ReactComponent as LinkdinLogo } from '../../../assests/footer-icons/linkdin.svg'
 import { ReactComponent as TwitterLogo } from '../../../assests/footer-icons/twitter.svg'
 
-function PcFooter() {
+function PcFooter({ activePage, handleItemClick }) {
   return (
     <div class="pcfooter">
       <div class="pcfooter-logo">
@@ -51,19 +51,21 @@ function PcFooter() {
         </div>
       </div>
 
-      <div>
-
+      
       <ul className='pcfooter-page-links'>
         <li> 
-        <Link to='/about'>About us</Link>
+        <Link to='/about' onClick={() => handleItemClick('About')}>About us</Link>
         </li>
       <li>
-        <Link to='/contact'>Contact us</Link>
+        <Link to='/contact' onClick={() => handleItemClick('Contact')}>Contact us</Link>
       </li>
 
+      <li>
+        <Link> Site map</Link>
+      </li>
       </ul>
       
-      </div>
+  
 
       <div className='pcfooter-logos'> 
         <FacebookLogo />

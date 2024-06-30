@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import './App.css'
@@ -16,11 +16,17 @@ import Footer from './Component/Footer/Footer';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const Index = () => {
+  const [activePage, setActivePage] = useState('Home');
+
+  const handleItemClick = (page) => {
+    setActivePage(page);
+};
+
     return (
       <React.Fragment>
-        <Nav />
+        <Nav activePage={activePage} handleItemClick={handleItemClick}  />
         <Outlet />
-        <Footer />
+        <Footer activePage={activePage} handleItemClick={handleItemClick}  />
       </React.Fragment>
     );
   };

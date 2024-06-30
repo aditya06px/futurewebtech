@@ -7,7 +7,7 @@ import { ReactComponent as LinkdinLogo } from '../../../assests/footer-icons/lin
 import { ReactComponent as TwitterLogo } from '../../../assests/footer-icons/twitter.svg'
 
 
-function MobileFooter() {
+function MobileFooter( { activePage, handleItemClick } ) {
   return (
     <div className="mobilefooter">
     <div className="mobilefooter-logo">
@@ -26,11 +26,11 @@ function MobileFooter() {
       <h3>Sitemap</h3>
       <ul className='mobilefooter-page-links'>
         <li> 
-        <Link to='/about'>About us</Link>
+        <Link to='/about' onClick={() => handleItemClick('About')} >About us</Link>
         </li>
 
         <li> 
-        <Link to='/contact'>Contact us</Link>
+        <Link to='/contact' onClick={() => handleItemClick('Contact')} >Contact us</Link>
         </li>
 
       </ul>

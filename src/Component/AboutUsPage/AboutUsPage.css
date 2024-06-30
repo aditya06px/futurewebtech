@@ -1,20 +1,20 @@
-.about-us {
+.about-us-page {
     padding: 20px;
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
-.about-us header {
+.about-us-page header {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.about-us header h1 {
+.about-us-page header h1 {
     font-size: 2.5em;
     color: #333;
 }
 
-.about-us header p {
+.about-us-page header p {
     font-size: 1.2em;
     color: #666;
 }
@@ -23,22 +23,22 @@
     margin-bottom: 40px;
 }
 
-.about-us h2 {
+.about-us-page h2 {
     font-size: 2em;
     color: #333;
     margin-bottom: 20px;
 }
 
-.about-us ul {
+.about-us-page ul {
     list-style-type: none;
     padding: 0;
 }
 
-.about-us ul li {
+.about-us-page ul li {
     margin-bottom: 10px;
 }
 
-.about-us ul li strong {
+.about-us-page ul li strong {
     color: #333;
 }
 
@@ -74,7 +74,7 @@
     border-radius: 5px;
 }
 
-.about-us button {
+.about-us-page button {
     display: inline-block;
     padding: 10px 20px;
     font-size: 1em;
