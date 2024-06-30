@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react'
 import MobileFooter from './MobileFooter/MobileFooter';
 import PcFooter from './PcFooter/PcFooter';
 
-function Footer() {
+function Footer( { activePage, handleItemClick }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
-  const updateMedia = () => {
+  const updateMedia = (  ) => {
     setIsMobile(window.innerWidth < 768);
   };
 
@@ -16,7 +16,8 @@ function Footer() {
 
   return (
     <>
-      {isMobile ? <MobileFooter /> : <PcFooter />}
+      {isMobile ? <MobileFooter activePage={activePage} handleItemClick={handleItemClick}  /> : 
+      <PcFooter activePage={activePage} handleItemClick={handleItemClick}  />}
     </>
   )
 }

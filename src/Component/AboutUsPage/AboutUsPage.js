@@ -10,7 +10,7 @@ const AboutUsPage = () => {
     }, [])
 
     return (
-        <div className="about-us">
+        <div className="about-us-page">
             <div>
                 <img src={aboutus} />
             </div>

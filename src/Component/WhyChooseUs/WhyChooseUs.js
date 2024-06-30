@@ -4,7 +4,7 @@ import './WhyChooseUs.css'
 function WhyChooseUs() {
   return (
     <section className='why-choose-us'>
-      <h2> Why choose <span className='dark-red-color'>Us</span></h2>
+      <h2> Why choose Us</h2>
 
       <div className='why-choose-us-container'>
             <div className='why-choose-us-card'>

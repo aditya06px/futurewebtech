@@ -2,17 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css'
 
-function Nav() {
+function Nav( { activePage, handleItemClick } ) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const toggleMenu = () => {
+    const toggleMenu = (  ) => {
         setIsMenuOpen(!isMenuOpen);
-    };
-
-    const [activePage, setActivePage] = useState('Home');
-
-    const handleItemClick = (page) => {
-        setActivePage(page);
     };
 
     return (
