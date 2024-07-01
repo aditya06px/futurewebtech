@@ -43,6 +43,7 @@ line-height: 20px;
 border-radius:12px;
 border: 1px solid #000000;
 padding: 8px 12px 8px 12px;
+height: 50px;
 /* text-align: left; */
 
 }
@@ -107,5 +108,6 @@ padding: 8px 12px 8px 12px;
 
     .service-btn {
         padding: 8px 16px 8px 16px;
+        height: 50px;
     }
 }

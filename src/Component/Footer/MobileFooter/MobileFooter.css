@@ -1,4 +1,5 @@
 .mobilefooter {
+  margin-top: 2rem;
     background-color: var(--light-blue-color);
     padding: 20px;
     text-align: center;

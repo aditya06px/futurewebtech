@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './ContactUs.css';
 import mobileImage from '../../assests/contact.jpg'
-import desktopImage from '../../assests/contact-us-pc.png'
 import callusicon from '../../assests/about-icons/call.png'
 import emailicon from '../../assests/about-icons/mail.png'
 import addressicon from '../../assests/about-icons/address.png'
@@ -43,20 +42,20 @@ const ContactUs = () => {
 
       <div className="contact-us">
 
-        <div class="contact-us-text-animation">
-          <span class="contact-us-heading" style={{ '--n': n }} > {text}</span>
+        <div className="contact-us-text-animation">
+          <span className="contact-us-heading" style={{ '--n': n }} > {text}</span>
         </div>
 
         <div className="contact-us-card-container">
-              <div class="contact-us-card">
-                <span class="icon">
-                  <img src={callusicon} />
+              <div className="contact-us-card">
+                <span className="icon">
+                  <img src={callusicon}  alt='call icon'/>
                 </span>
-                <div class="content-wrap">
-                  <span class="item-title">
+                <div className="content-wrap">
+                  <span className="item-title">
                     Call us anytime
                   </span>
-                  <p class="text">
+                  <p className="text">
                     +91 9373979779/ +91 8788278677/ +91 93
                     59945490
                   </p>
@@ -65,14 +64,14 @@ const ContactUs = () => {
             </div>
 
             <div>
-              <div class="contact-us-card">
-                <span class="icon">
-                    <img src={addressicon} />
+              <div className="contact-us-card">
+                <span className="icon">
+                    <img src={addressicon} alt='address icon'/>
                 </span>
-                <div class="content-wrap">
-                  <span class="item-title">
+                <div className="content-wrap">
+                  <span className="item-title">
                     Our headquarters              </span>
-                  <p class="text">
+                  <p className="text">
                     Modern Apartment, Mali Colony,<br /> Rajarampuri, Kolhapur - 416008 Maharashtra INDIA
                   </p>
                 </div>
@@ -80,15 +79,15 @@ const ContactUs = () => {
             </div>
 
             <div >
-              <div class="contact-us-card">
-                <span class="icon">
-                <img src={emailicon} />
+              <div className="contact-us-card">
+                <span className="icon">
+                <img src={emailicon} alt='email icon'/>
                 </span>
-                <div class="content-wrap">
-                  <span class="item-title">
+                <div className="content-wrap">
+                  <span className="item-title">
                     Email
                   </span>
-                  <p class="text">
+                  <p className="text">
                     futurewebtechnologies.co.in
                   </p>
                 </div>
@@ -100,7 +99,7 @@ const ContactUs = () => {
        
         <div className="contact-us-info">
               <div className={isMobile ? 'contact-us-mobile-img-container' : 'contact-us-desktop-img-container'}>
-                  <img src={mobileImage}  />
+                  <img src={mobileImage} alt='contact us' />
                 </div>
          </div> 
 
