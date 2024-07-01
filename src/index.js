@@ -11,9 +11,6 @@ import AboutUsPage from './Component/AboutUsPage/AboutUsPage'
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Footer from './Component/Footer/Footer';
 
-// import appRouter from './Component/appRouter'
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const Index = () => {
   const [activePage, setActivePage] = useState('Home');
@@ -47,7 +44,7 @@ const Index = () => {
         },
         {
           path: "/about",
-          element: <AboutUsPage />,  
+          element: <AboutUsPage   />,  
         },
         {
           path: "/contact",
@@ -57,12 +54,6 @@ const Index = () => {
     },
   ]);
 
-  
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

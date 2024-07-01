@@ -8,12 +8,12 @@ import { ReactComponent as TwitterLogo } from '../../../assests/footer-icons/twi
 
 function PcFooter({ activePage, handleItemClick }) {
   return (
-    <div class="pcfooter">
-      <div class="pcfooter-logo">
+    <div className="pcfooter">
+      <div className="pcfooter-logo">
         LOGO
       </div>
-      <div class="pcfooter-quick-links">
-        <div class="pcfooter-column">
+      <div className="pcfooter-quick-links">
+        <div className="pcfooter-column">
           <h3>Web Development</h3>
           <ul>
             <li>Website Design and Development</li>
@@ -22,7 +22,7 @@ function PcFooter({ activePage, handleItemClick }) {
             <li>WordPress Development</li>
           </ul>
         </div>
-        <div class="pcfooter-column">
+        <div className="pcfooter-column">
           <h3>App Development</h3>
           <ul>
             <li>Android Application Development</li>
@@ -30,7 +30,7 @@ function PcFooter({ activePage, handleItemClick }) {
             <li>iPhone Application Development</li>
           </ul>
         </div>
-        <div class="pcfooter-column">
+        <div className="pcfooter-column">
           <h3>Search Engine Optimization</h3>
           <ul>
             <li>Keyword Ranking Solution</li>
@@ -39,7 +39,7 @@ function PcFooter({ activePage, handleItemClick }) {
             <li>Local SEO</li>
           </ul>
         </div>
-        <div class="pcfooter-column">
+        <div className="pcfooter-column">
           <h3>Digital Marketing</h3>
           <ul>
             <li>Digital Marketing Solutions</li>
