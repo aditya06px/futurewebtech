@@ -26,52 +26,52 @@ const AboutUsPage = () => {
             <section className="about-us-why-choose-us">
                 <h2>Why Choose Us?</h2>
                 <ul>
-                    <li class="about-us-card">
-                        <div class="content-wrap">
-                            <span class="item-title">
+                    <li className="about-us-card">
+                        <div className="content-wrap">
+                            <span className="item-title">
                                 Innovation:</span>
-                            <p class="text">
+                            <p className="text">
                                 We stay ahead of industry trends to offer the latest solutions.
                             </p>
                         </div>
                     </li>
 
-                    <li class="about-us-card">
-                        <div class="content-wrap">
-                            <span class="item-title">
+                    <li className="about-us-card">
+                        <div className="content-wrap">
+                            <span className="item-title">
                                 Passion:</span>
-                            <p class="text">
+                            <p className="text">
                                 Our youthful team is enthusiastic and committed to delivering the best results.
                             </p>
                         </div>
                     </li>
 
-                    <li class="about-us-card">
-                        <div class="content-wrap">
-                            <span class="item-title">
+                    <li className="about-us-card">
+                        <div className="content-wrap">
+                            <span className="item-title">
                                 Youthful Energy:</span>
-                            <p class="text">
+                            <p className="text">
                                 Our young and vibrant team brings fresh perspectives and innovative ideas.
                             </p>
                         </div>
                     </li>
 
-                    <li class="about-us-card">
-                        <div class="content-wrap">
-                            <span class="item-title">
+                    <li className="about-us-card">
+                        <div className="content-wrap">
+                            <span className="item-title">
                                 Expertise:</span>
-                            <p class="text">
+                            <p className="text">
                                 Despite our youth, we possess a wealth of knowledge and experience in the software industry.
                             </p>
                         </div>
                     </li>
 
 
-                    <li class="about-us-card">
-                        <div class="content-wrap">
-                            <span class="item-title">
+                    <li className="about-us-card">
+                        <div className="content-wrap">
+                            <span className="item-title">
                                 Quality:</span>
-                            <p class="text">
+                            <p className="text">
                                 We prioritize excellence in every project, ensuring top-notch performance.
                             </p>
                         </div>
@@ -79,21 +79,21 @@ const AboutUsPage = () => {
 
 
 
-                    <li class="about-us-card">
-                        <div class="content-wrap">
-                            <span class="item-title">
+                    <li className="about-us-card">
+                        <div className="content-wrap">
+                            <span className="item-title">
                                 Commitment:</span>
-                            <p class="text">
+                            <p className="text">
                                 We are dedicated to delivering high-quality solutions that exceed expectations.
                             </p>
                         </div>
                     </li>
 
-                    <li class="about-us-card">
-                        <div class="content-wrap">
-                            <span class="item-title">
+                    <li className="about-us-card">
+                        <div className="content-wrap">
+                            <span className="item-title">
                                 Collaboration:</span>
-                            <p class="text">
+                            <p className="text">
                                 We work closely with our clients to understand their needs and provide personalized service. We work hand-in-hand with our clients to achieve their goals.
                             </p>
                         </div>
@@ -109,13 +109,13 @@ const AboutUsPage = () => {
             <section className="our-promise">
                 <h2>Our Promise</h2>
                 <p>At Future Web Technologies, we believe in the power of technology to transform businesses. Our goal is to provide you with the tools and expertise you need to succeed in an ever-evolving digital landscape. We are here to support you every step of the way, from concept to completion.</p>
-                <button><Link to='/service'>chekout services</Link></button>
+                <button><Link to='/service' >chekout services</Link></button>
             </section>
 
             <section className="future-together">
                 <h2>Let's Create the Future Together</h2>
                 <p>Partner with us and experience the energy and innovation of a young, forward-thinking team. Whether you're a startup or an established enterprise, we are here to help you navigate the complexities of the digital world and achieve your vision.</p>
-               <button><Link to='/conact#contact-us'> Contact Us</Link></button>
+               <button><Link to='/contact'> Contact Us</Link></button>
             </section>
             
             </div>

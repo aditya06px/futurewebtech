@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Nav.css'
 
 function Nav( { activePage, handleItemClick } ) {
@@ -8,6 +8,29 @@ function Nav( { activePage, handleItemClick } ) {
     const toggleMenu = (  ) => {
         setIsMenuOpen(!isMenuOpen);
     };
+
+    const location = useLocation();
+
+    useEffect(() => {
+
+        switch (location.pathname) {
+          case '/':
+            handleItemClick('Home');
+            break;
+          case '/service':
+            handleItemClick('Services');
+            break;
+          case '/about':
+            handleItemClick('About');
+            break;
+          case '/contact':
+            handleItemClick('Contact');
+            break;
+          default:
+            handleItemClick('Home');
+        }
+      }, [location.pathname, handleItemClick]);
+
 
     return (
         <nav className="navbar">
