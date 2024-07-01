@@ -14,7 +14,7 @@
 }
 
 .why-choose-us-card {
-    padding: 20px 0 0 20px;
+    padding: 20px 20px 20px 20px;
     margin-top: 16px;
     border-radius: 20px;
     background-color: var(--card-bg-color);
@@ -50,6 +50,7 @@
 
     .why-choose-us-card {
         flex: 1;
+        padding: 20px 20px 10px 20px;
     }
 
     .why-choose-us h2 {
