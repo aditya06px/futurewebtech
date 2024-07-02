@@ -18,8 +18,8 @@ function OurServices() {
                 <div className="our-services-top-container"> 
 
                 <article className="card">
-                    <div>
-                        <div className='our-services-logo'>
+                    <div className='bg'>
+                        <div className='our-services-logo blob'>
                             <UiUxLogo />
                         </div>
                         <h3>UI/UX Design</h3>

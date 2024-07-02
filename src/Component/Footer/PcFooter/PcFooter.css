@@ -7,6 +7,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
 }
 
 .pcfooter-logo {
@@ -72,13 +75,20 @@
 
     text-decoration: underline;
 }
-
+.company-logo{
+    width: 100px;
+    height: 80px;
+}
 
 .pcfooter-logos {
     display: flex;
     justify-content: center;
     width: 80%;
     margin: 0 auto;
+    margin-top: 20px;
+}
+.social-media-icons{
+    width: 65px;
 }
 
 .pcfooter-copyright {

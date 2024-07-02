@@ -1,3 +1,102 @@
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 24px;
+    line-height: 1;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 36px;
+    border-radius: 22px;
+    color: #ffffff;
+    overflow: hidden;
+    background: #d2d8ef;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);   
+     width: 350px;
+
+  }
+  
+  .content::before {
+    position: absolute;
+    content: "";
+    top: -4%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%);
+    background: #ced8ff;
+    z-index: -1;
+    transform-origin: bottom;
+  
+    border-radius: inherit;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .content::after {
+    position: absolute;
+    content: "";
+    top: -8%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%);
+    background: #e7ecff;
+    z-index: -2;
+    transform-origin: bottom;
+    border-radius: inherit;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .content svg {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .content .para {
+    z-index: 1;
+    opacity: 1;
+    font-size: 18px;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .content .link {
+    z-index: 1;
+    color: #fea000;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .content .link:hover {
+    text-decoration: underline;
+  }
+  
+  .card:hover {
+    transform: translate(0px, -16px);
+  }
+  
+  .card:hover .content::before {
+    rotate: -8deg;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card:hover .content::after {
+    rotate: 8deg;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
 .about-us-page {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -54,8 +153,11 @@
     overflow: hidden;
     margin-bottom: 30px;
     border-radius: 3px;
+    border-radius: 14px;
   }
-  
+  .about-us-card:hover {
+    transform: scale(1.01); /* Scale up the card by 5% on hover */
+}
   
   .about-us-card .content-wrap {
     padding: 20px;
@@ -75,15 +177,16 @@
   }
   
 .about-us-page button {
-    display: inline-block;
-   width: 100%;
+  display: inline-block;
+  width: 100%;
   padding: 10px;
   background-color: #007bff;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 14px;
   cursor: pointer;
   font-size: 16px;
+  margin: auto;
   margin-top: 2rem;
 }
 
@@ -139,20 +242,23 @@ button:hover {
         display: flex;
         justify-content: space-between;
         height: 500px;
+        margin-top: 75px;
     }
 
     .about-us-text-container .our-promise,
     .about-us-text-container .future-together {
         flex: 1;
-        border: 2px solid #1358a1;
         background-color: var(--card-bg-color);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
+        border-radius: 14px;
         padding: 20px;
     }
 
 .our-promise {
         align-self: flex-start; 
+        box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+        border-radius: 14px;
+
     }
     
     .future-together {
