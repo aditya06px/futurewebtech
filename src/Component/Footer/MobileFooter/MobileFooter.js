@@ -5,13 +5,13 @@ import { ReactComponent as FacebookLogo } from '../../../assests/footer-icons/fa
 import { ReactComponent as  InstagramLogo} from '../../../assests/footer-icons/instagram.svg'
 import { ReactComponent as LinkdinLogo } from '../../../assests/footer-icons/linkdin.svg'
 import { ReactComponent as TwitterLogo } from '../../../assests/footer-icons/twitter.svg'
-
+import Logo from "../../../assests/icons/logo.png"
 
 function MobileFooter( { activePage, handleItemClick } ) {
   return (
     <div className="mobilefooter">
     <div className="mobilefooter-logo">
-      LOGO
+    <img src={Logo} alt="company logo" className='company-logo' />
     </div>
     <div className="mobilefooter-quick-links">
       <h3>Quick Links</h3>

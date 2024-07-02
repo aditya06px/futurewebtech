@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Nav.css'
+import Logo from "../../assests/icons/logo.png"
 
 function Nav( { activePage, handleItemClick } ) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,7 +37,7 @@ function Nav( { activePage, handleItemClick } ) {
         <nav className="navbar">
             <div className="navbar-logo">
             <Link to="/" onClick={() => handleItemClick('Home')}>
-                    <img src="logo.png" alt="Logo" />
+                    <img src={Logo} alt="Logo" />
             </Link>
             </div>
 

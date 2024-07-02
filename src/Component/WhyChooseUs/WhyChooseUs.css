@@ -18,6 +18,11 @@
     margin-top: 16px;
     border-radius: 20px;
     background-color: var(--card-bg-color);
+    
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+.why-choose-us-card:hover {
+    transform: scale(1.05); /* Scale up the card by 5% on hover */
 }
 
 .why-choose-us-card h3 {

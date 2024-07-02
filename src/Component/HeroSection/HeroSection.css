@@ -49,4 +49,10 @@
         margin-top: 8px;    
     }
 
+}@media (max-width:500px) {
+
+    .hero-section{
+        
+    min-height: 86vh;
+    }
 }
