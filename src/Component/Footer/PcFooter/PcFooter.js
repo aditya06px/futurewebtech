@@ -67,7 +67,7 @@ function PcFooter({ activePage, handleItemClick }) {
       
   
 
-      <div className='pcfooter-logos '> 
+      <div className='pcfooter-logos'> 
         <FacebookLogo className='social-media-icons'/>
         <InstagramLogo className='social-media-icons'/> 
         <LinkdinLogo className='social-media-icons'/> 
