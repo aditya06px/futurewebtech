@@ -47,6 +47,8 @@ html {
     /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
+
+    --button-blue-color: #2E86AB;
   }
 
 .App {
