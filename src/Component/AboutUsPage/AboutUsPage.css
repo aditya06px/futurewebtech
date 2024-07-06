@@ -240,7 +240,7 @@ button:hover {
 
     .about-us-text-container {
         display: flex;
-        justify-content: space-between;
+        gap: 20rem;
         height: 500px;
         margin-top: 75px;
     }
