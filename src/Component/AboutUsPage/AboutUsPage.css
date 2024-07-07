@@ -1,4 +1,4 @@
-.card {
+.about-us-text-container .card {
     position: relative;
     display: flex;
     align-items: center;
@@ -15,9 +15,9 @@
     align-items: flex-start;
     padding: 36px;
     border-radius: 22px;
-    color: #ffffff;
+    color: var(--home-page-card-text-color);
+    background: var(--about-page-card-color);
     overflow: hidden;
-    background: #d2d8ef;
     transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);   
      width: 350px;
 
@@ -141,13 +141,13 @@
 }
 
 .about-us-page ul li strong {
-    color: #333;
+    color: var(--link-color);
 }
 
 
 .about-us-card {
     width: 100%;
-    background-color: #215070;
+    background-color: var(--why-choose-us-card-color);
     display: table;
     color: #3498db;
     overflow: hidden;
@@ -167,19 +167,16 @@
   .about-us-card .content-wrap .item-title {
     display: inline-block;
     font-size: 24px;
-    color: #a3baca;
     margin-bottom: 3px;
   }
   
   .about-us-card .content-wrap .text {
-    color: #fff;
     font-size: 16px;
   }
   
 .about-us-page button {
   display: inline-block;
   padding: 10px 20px;
-  color: #fff;
   border: none;
   border-radius: 16px;
   cursor: pointer;
@@ -188,11 +185,12 @@
   margin-top: 2rem;
   color: var(--white-color);
   background: transparent;
-  background-color: var(--button-blue-color);
+  color: var(--button-text-color);
+  background-color: var(--button-color);
 }
 
 button:hover {
-    background-color: #1358a1;
+    background-color: var(--button-hover-color);
 }
 
 
