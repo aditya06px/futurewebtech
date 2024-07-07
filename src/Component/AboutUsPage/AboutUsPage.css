@@ -178,16 +178,17 @@
   
 .about-us-page button {
   display: inline-block;
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
+  padding: 10px 20px;
   color: #fff;
   border: none;
-  border-radius: 14px;
+  border-radius: 16px;
   cursor: pointer;
   font-size: 16px;
   margin: auto;
   margin-top: 2rem;
+  color: var(--white-color);
+  background: transparent;
+  background-color: var(--button-blue-color);
 }
 
 button:hover {

@@ -1,6 +1,4 @@
-.getNowBtn{
-  color: white;
-}
+
 .get-quotation {
 
   display: flex;
@@ -20,20 +18,18 @@
 }
 
 .get-quotation button {
-  background-color: var(--light-blue-color);
   border: none;
   cursor: pointer;
   padding: 10px 20px;
   gap: 8px;
-  border-radius: 5px;
+  border-radius: 16px;
   transition: background-color 0.3s ease;
   text-align: center;
   display: block;
-  margin: auto
-}
-
-.get-quotation button:hover {
-  background-color: var(--dark-blue-color);
+  margin: auto;
+  color: var(--white-color);
+  background-color: var(--button-blue-color);
+  border-radius: 16px;
 }
 
 
