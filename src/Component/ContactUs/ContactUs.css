@@ -1,28 +1,20 @@
-.orange {
-  color: #01f7ff;
-}
-
 .form-container {
   max-width: 700px;
   margin: auto;
   background-color: #001925;
   padding: 30px;
-  border-left: 5px solid #01ccff;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
 }
 
 .heading {
   display: block;
-  color: white;
   font-size: 1.5rem;
   font-weight: 800;
   margin-bottom: 20px;
 }
 
 .form-container .form .input {
-  color: #87a4b6;
   width: 100%;
-  background-color: #002733;
   border: none;
   outline: none;
   padding: 10px;
@@ -32,27 +24,18 @@
   border-left: 1px solid transparent;
 }
 
-.form-container .form .input:focus {
-  border-left: 5px solid #01a2ff;
-}
 
 .form-container .form .textarea {
   width: 100%;
   padding: 10px;
   border: none;
   outline: none;
-  background-color: #013747;
-  color: #01d0ff;
   font-weight: bold;
   resize: none;
   max-height: 150px;
   margin-bottom: 20px;
   border-left: 1px solid transparent;
   transition: all 0.2s ease-in-out;
-}
-
-.form-container .form .textarea:focus {
-  border-left: 5px solid #08e7f3;
 }
 
 .form-container .form .button-container {
@@ -62,7 +45,6 @@
 
 .form-container .form .button-container .send-button {
   flex-basis: 70%;
-  background: #0ae6f1;
   padding: 10px;
   color: #001925;
   text-align: center;
@@ -148,11 +130,11 @@
   font-size: 16px;
   color: var(--white-color);
   background: transparent;
-  background-color: var(--button-blue-color);
+  background-color: var(--button-color);
 }
 
 .contact-us-button:hover {
-  background-color: #0056b3;
+  background-color: var(#7FDBFF);
 }
 
 /* TYPE WRITER ANIMATION */
@@ -239,7 +221,6 @@
   position: absolute;
   bottom: 15px;
   left: 15px;
-  color: #fff;
   font-size: 28px;
   z-index: 1;
 }
@@ -254,12 +235,10 @@
 .contact-us-card .content-wrap .item-title {
   display: inline-block;
   font-size: 16px;
-  color: #a3baca;
   margin-bottom: 3px;
 }
 
 .contact-us-card .content-wrap .text {
-  color: #fff;
   font-size: 15px;
 }
 

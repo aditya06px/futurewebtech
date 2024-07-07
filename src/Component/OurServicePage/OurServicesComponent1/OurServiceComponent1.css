@@ -1,14 +1,11 @@
 .OurServiceComponent1-container  {
     width:80%;
-    /* display: flex; */
-    /* flex-direction: column; */
     margin: 20px auto 0;
 }
 
 .OurServiceComponent1-img {
     display :inline-block;
     width: 100%;
-
 }
 
 
@@ -26,6 +23,7 @@ line-height: 19px;
 text-align: left;
 margin-top: 16px;
 }
+
 .OurServiceComponent1-button-container{
     gap: 2px;
     margin: 0 auto;
@@ -42,35 +40,20 @@ font-weight: 400;
 line-height: 20px;
 border-radius:12px;
 border: none;
+transition: background-color 0.3s ease;
 padding: 8px 12px 8px 12px;
 height: 50px;
-color: var(--white-color);
-background: transparent;
-background-color: var(--button-blue-color);
-/* text-align: left; */
-
 }
 
-/* .main-button {
-    width: 256px;
-    padding: 10px 20px;
-    background-color: var(--light-blue-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 20px auto 0;
-} */
 
-.main-button:hover {
+.service-btn:hover {
     background-color: var(--dark-blue-color);
-}
+} 
 
 @media (min-width: 768px) { 
 
     .OurServiceComponent1-container  {
         display: flex;
-        
         flex-direction: row;
         justify-content: space-between;
         width: 80%;
@@ -83,8 +66,6 @@ background-color: var(--button-blue-color);
     .reverse-container {
         flex-direction: row-reverse;
     }
-
-    
 
     .OurServiceComponent1-img {
         max-width: 448px;
@@ -105,9 +86,6 @@ background-color: var(--button-blue-color);
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .main-button { 
-        margin-top: 48px;
-    }
 
     .service-btn {
         /* padding: 8px 16px 8px 16px; */
