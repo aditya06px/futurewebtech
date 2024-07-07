@@ -38,6 +38,7 @@ function PcFooter({ activePage, handleItemClick }) {
             <li>Pay Per Click</li>
             <li>Local SEO</li>
           </ul>
+        
         </div>
         <div className="pcfooter-column">
           <h3>Digital Marketing</h3>
@@ -49,6 +50,8 @@ function PcFooter({ activePage, handleItemClick }) {
             <li>Affiliate Marketing Services</li>
           </ul>
         </div>
+        <div className=""><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4544.68445533079!2d74.24784735143187!3d16.696445026864243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc10039a38aefc1%3A0x6b7b86e97b981c6e!2sModern%20Apartment!5e0!3m2!1sen!2sin!4v1720269888134!5m2!1sen!2sin" width="350" height="250" ></iframe></div>
+
       </div>
 
       
