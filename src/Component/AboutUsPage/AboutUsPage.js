@@ -131,7 +131,7 @@ const AboutUsPage = () => {
                 </section></>) :
                 <>
                     <div className='about-us-text-container'>
-                        <div class="card ">
+                        <div class="card">
                             <div class="content">
                                 <svg
                                     fill="currentColor"
@@ -147,7 +147,7 @@ const AboutUsPage = () => {
                                 <button><Link to='/service' >chekout services</Link></button>
                             </div>
                         </div>
-                        <div class="card ">
+                        <div class="card">
                             <div class="content">
                                 <svg
                                     fill="currentColor"

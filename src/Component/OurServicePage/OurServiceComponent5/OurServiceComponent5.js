@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import '../OurServicesComponent1/OurServiceComponent1.css'
-import DigitalMarketingImg from '../../../assests/our-services/mobile-development.jpg'
+import DigitalMarketingImg from '../../../assests/our-services/digital-marketing.jpg'
 
 
 function OurServiceComponent5() {

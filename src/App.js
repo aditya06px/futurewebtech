@@ -12,7 +12,6 @@ import OurServiceComponent4 from './Component/OurServicePage/OurServiceComponent
 import OurServiceComponent5 from './Component/OurServicePage/OurServiceComponent5/OurServiceComponent5';
 import OurServiceHeroSection from './Component/OurServicePage/OurServiceHeroSection/OurServiceHeroSection';
 import ContactUs from './Component/ContactUs/ContactUs';
-import MobileFooter from './Component/Footer/MobileFooter/MobileFooter';
 import PcFooter from './Component/Footer/PcFooter/PcFooter';
 
 function App() {

@@ -1,20 +1,10 @@
-.company-logo{
-  width: 100px;
-  height: 80px;
-  margin: auto;
-}
+
 .mobilefooter {
   margin-top: 2rem;
-    background-color: var(--light-blue-color);
-    padding: 20px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-  }
-  
-  .mobilefooter-logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  color: var(--footer-text-color);
+  background-color: var(--footer-color);
   }
   
   .mobilefooter-quick-links,
@@ -29,7 +19,6 @@
     font-weight: 700;
     line-height: 34.5px;
     text-align: left;
-    color: var(--body-color);
   }
   
   .mobilefooter-quick-links ul,
@@ -42,7 +31,6 @@
   .mobilefooter-sitemap li {
      margin-bottom: 5px;
      cursor: pointer;
-     color: var(--body-color);
      font-size: 17px;
      font-weight: 500;
      line-height: 25.5px;
@@ -56,6 +44,7 @@
   
   .mobilefooter-logos {
     display: flex;
+    justify-content: center;
     width: 80%;
     margin: 0 auto;
   }
@@ -64,5 +53,4 @@
 font-size: 14px;
 font-weight: 400;
 line-height: 16px;
-color: var(--body-color);
   }

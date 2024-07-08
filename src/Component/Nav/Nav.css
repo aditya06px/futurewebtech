@@ -3,13 +3,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px 20px;
-  background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-  
+  /* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
   position: -webkit-sticky; /* For Safari */
   position: sticky;
   top: 0;
   z-index: 1000;
+  background-color: var(--navbar-color);
 }
 
 .navbar-logo img {
@@ -32,15 +31,15 @@
 }
 
 .navbar-links li a {
-  color: #fff;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 .navbar-links li a:hover, .navbar-links li a.active {
-  color: aqua;
+  color: var(--link-hover-color);
   text-decoration: underline 3px;
   text-underline-offset: 4px;
-  text-decoration-color: white;
+  text-decoration-color: var(--navar-link-hover-underline-color);
 }
 
 .hamburger {
@@ -61,7 +60,7 @@
   left: 0;
   width: 100%;
   gap: 24px;
-  background-color: var(--light-blue-color);
+  background-color: var(--navbar-toggle-color);
 }
 
 .navbar-div {

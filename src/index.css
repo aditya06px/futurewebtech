@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* css reset */
 
 /*
@@ -21,6 +22,10 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
 /*
   5. Improve media defaults
@@ -45,7 +50,15 @@ a {
 /*
   7. Avoid text overflows
 */
-p, h1, h2, h3, h4, h5, h6 {
+ h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
+}
+
+p {
   overflow-wrap: break-word;
 }
 /*
@@ -53,4 +66,18 @@ p, h1, h2, h3, h4, h5, h6 {
 */
 #root, #__next {
   isolation: isolate;
+}
+
+button {
+  cursor: pointer;
+
+  transition: ease-out 0.5s;
+  box-shadow: inset 0 0 0 0 var(--button-hover-color);
+  color: var(--text-color);
+  background-color: var(--button-color);
+}
+
+button:hover {
+  box-shadow: inset 0 -100px 0 0 var(--button-hover-color);
+  background-color: var(--button-color);
 }

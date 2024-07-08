@@ -21,7 +21,9 @@ const Index = () => {
 
     return (
       <React.Fragment>
+        <div> 
         <Nav activePage={activePage} handleItemClick={handleItemClick}  />
+        </div>
         <Outlet />
         <Footer activePage={activePage} handleItemClick={handleItemClick}  />
       </React.Fragment>
