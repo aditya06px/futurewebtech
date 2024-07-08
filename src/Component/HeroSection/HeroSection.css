@@ -1,10 +1,5 @@
-.hero-orange-color {
-    color: var(--orange-color);
-
-}
 
 .hero-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assests/LaptopScreens/OfficeImage.jpg);
     background-position: center;
     background-size: cover;
     padding: 1em;
@@ -14,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assests/LaptopScreens/OfficeImage.jpg);
     min-height: 93vh;
 }
 
@@ -22,9 +18,11 @@
     font-size: 14px;
     line-height: 16.41px;
     font-weight: 400;
+    color: var(--white-color);
 }
 
 .hero-section p {
+    color: var(--white-color);
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -50,7 +48,6 @@
 }@media (max-width:500px) {
 
     .hero-section{
-        
     min-height: 86vh;
     }
 }

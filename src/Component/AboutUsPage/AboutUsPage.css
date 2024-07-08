@@ -79,18 +79,18 @@
     text-decoration: underline;
   }
   
-  .card:hover {
+  .about-us-text-container .card:hover {
     transform: translate(0px, -16px);
   }
   
-  .card:hover .content::before {
+  .about-us-text-container .card:hover .content::before {
     rotate: -8deg;
     top: 0;
     width: 100%;
     height: 100%;
   }
   
-  .card:hover .content::after {
+  .about-us-text-container .card:hover .content::after {
     rotate: 8deg;
     top: 0;
     width: 100%;
@@ -160,6 +160,7 @@
 }
   
   .about-us-card .content-wrap {
+    color: white;
     padding: 20px;
   }
   

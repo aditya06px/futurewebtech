@@ -10,9 +10,6 @@ import Logo from "../../../assests/icons/logo.png"
 function MobileFooter( { activePage, handleItemClick } ) {
   return (
     <div className="mobilefooter">
-    <div className="mobilefooter-logo">
-    <img src={Logo} alt="company logo" className='company-logo' />
-    </div>
     <div className="mobilefooter-quick-links">
       <h3>Quick Links</h3>
       <ul>
@@ -37,13 +34,21 @@ function MobileFooter( { activePage, handleItemClick } ) {
     </div>
 
     <div className='mobilefooter-logos'> 
-        <FacebookLogo />
-        <InstagramLogo /> 
-        <LinkdinLogo /> 
-        <TwitterLogo />
+        <a href="https://www.linkedin.com/in/future-web-technologies" target="_blank" rel="noopener noreferrer">
+            <FacebookLogo />
+        </a>
+      
+        <a href="https://www.linkedin.com/in/future-web-technologies" target="_blank" rel="noopener noreferrer">
+          <InstagramLogo /> 
+        </a>
+
+
+        <a href="https://www.linkedin.com/in/future-web-technologies" target="_blank" rel="noopener noreferrer">
+          <LinkdinLogo /> 
+        </a>
     </div>
 
-    <p className='mobilefooter-copyright'>Copyright © 2024. All Rights Reserved | Future Web Technologies</p>
+    <p className='mobilefooter-copyright'>Copyright © 2022. All Rights Reserved | Future Web Technologies</p>
   </div>
   )
 }

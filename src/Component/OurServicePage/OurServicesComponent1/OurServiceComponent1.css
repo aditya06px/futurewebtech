@@ -10,15 +10,15 @@
 
 
 .OurServiceComponent1-text h3 {
-font-size: 20px;
-font-weight: 400;
+font-size: 29px;
+font-weight: 500;
 line-height: 20px;
 text-align: left;
 }
 
 .OurServiceComponent1-text p {
-font-size: 19px;
-font-weight: 500;
+font-size: 16px;
+font-weight: 400;
 line-height: 19px;
 text-align: left;
 margin-top: 16px;
@@ -42,13 +42,15 @@ border-radius:12px;
 border: none;
 transition: background-color 0.3s ease;
 padding: 8px 12px 8px 12px;
-height: 50px;
+background-color: white;
+border: 2px solid #EAB308;
+color: black;
 }
-
-
+ 
 .service-btn:hover {
-    background-color: var(--dark-blue-color);
-} 
+    background-color: white;
+    box-shadow: none;
+}
 
 @media (min-width: 768px) { 
 

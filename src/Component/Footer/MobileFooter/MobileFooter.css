@@ -6,18 +6,6 @@
   color: var(--footer-text-color);
   background-color: var(--footer-color);
   }
-
-  .company-logo{
-    width: 100px;
-    height: 80px;
-    margin: auto;
-  }
-  
-  .mobilefooter-logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
   
   .mobilefooter-quick-links,
   .mobilefooter-sitemap {
