@@ -3,6 +3,17 @@
   text-align: center;
 }
 
+.contact-us-heading {
+  margin-bottom: 15px;
+  color: var(--title-color);
+  font-size: 51px;
+  line-height: 76.5px;
+  text-align: left;
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 600;
+}
+
+
 /* TYPE WRITER ANIMATION */
 .contact-us-text-animation {
   font-family: monospace;
@@ -14,15 +25,10 @@
 }
 
 .contact-us-heading {
-  margin-bottom: 15px;
-  font-size: 51px;
-  line-height: 76.5px;
-  text-align: left;
-  font-weight: 600;
-  color: black;
+  color: #0000;
   background:
-    linear-gradient(-90deg, black 5px, #0000 0) 10px 0,
-    linear-gradient(black 0 0) 0 0;
+  linear-gradient(-90deg, black 5px, #0000 0) 10px 0,
+  linear-gradient(black 0 0) 0 0;
   background-size: calc(var(--n) * 1ch) 200%;
   -webkit-background-clip: padding-box, text;
   background-clip: padding-box, text;

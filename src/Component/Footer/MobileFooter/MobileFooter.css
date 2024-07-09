@@ -12,13 +12,13 @@
     margin-bottom: 20px;
   }
   
-  .mobilefooter-quick-links h3,
-  .mobilefooter-sitemap h3 {
+  .mobilefooter-quick-links h3 {
     margin-bottom: 10px;
     font-size: 23px;
     font-weight: 700;
     line-height: 34.5px;
-    text-align: left;
+    text-align: center;
+
   }
   
   .mobilefooter-quick-links ul,
