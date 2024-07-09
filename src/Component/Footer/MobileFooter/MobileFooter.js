@@ -20,8 +20,8 @@ function MobileFooter( { activePage, handleItemClick } ) {
       </ul>
     </div>
     <div className="mobilefooter-sitemap">
-      <h3>Sitemap</h3>
       <ul className='mobilefooter-page-links'>
+      <li>Sitemap</li>
         <li> 
         <Link to='/about' onClick={() => handleItemClick('About')} >About us</Link>
         </li>
