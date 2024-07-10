@@ -105,6 +105,7 @@
   cursor: pointer;
   margin-left: 0;
   text-align: left;
+  border-radius: 26px;
 }
 
 .contact-us-button:hover {
@@ -124,7 +125,7 @@
 
 .contact-us-button {
   border: none;
-  border-radius: 25px;
+  border-radius: 26px;
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
@@ -272,7 +273,7 @@
   }
 
   .contact-us-button {
-    border-radius: 16px;
+    border-radius: 26px;
   }
 
 

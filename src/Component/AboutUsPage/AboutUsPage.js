@@ -144,7 +144,7 @@ const AboutUsPage = () => {
                                 </svg>
                                 <h2>Our Promise</h2>
                                 <p>At Future Web Technologies, we believe in the power of technology to transform businesses. Our goal is to provide you with the tools and expertise you need to succeed in an ever-evolving digital landscape. We are here to support you every step of the way, from concept to completion.</p>
-                                <button><Link to='/service' >chekout services</Link></button>
+                                <button><Link to='/service' >Checkout Services</Link></button>
                             </div>
                         </div>
                         <div class="card">

@@ -34,7 +34,6 @@
     background: #ced8ff;
     z-index: -1;
     transform-origin: bottom;
-  
     border-radius: inherit;
     transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
   }
@@ -179,7 +178,7 @@
   display: inline-block;
   padding: 10px 20px;
   border: none;
-  border-radius: 16px;
+  border-radius: 26px;
   cursor: pointer;
   font-size: 16px;
   margin: auto;
