@@ -64,7 +64,7 @@ const ContactUs = () => {
             </span>
             <div className="content-wrap">
               <span className="item-title">
-                Call us anytime
+                Call us
               </span>
               <p className="text">
                 +91 9373979779/ +91 8788278677/ +91 9359945490
@@ -80,7 +80,7 @@ const ContactUs = () => {
             </span>
             <div className="content-wrap">
               <span className="item-title">
-                Our headquarters              </span>
+                Our Office              </span>
               <p className="text">
                 Modern Apartment, Mali Colony,<br /> Rajarampuri, Kolhapur - 416008 Maharashtra INDIA
               </p>
