@@ -5,7 +5,6 @@ import { ReactComponent as FacebookLogo } from '../../../assests/footer-icons/fa
 import { ReactComponent as  InstagramLogo} from '../../../assests/footer-icons/instagram.svg'
 import { ReactComponent as LinkdinLogo } from '../../../assests/footer-icons/linkdin.svg'
 import { ReactComponent as TwitterLogo } from '../../../assests/footer-icons/twitter.svg'
-import Logo from "../../../assests/icons/logo.png"
 
 function MobileFooter( { activePage, handleItemClick } ) {
   return (
